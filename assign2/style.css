@@ -1,0 +1,221 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playListContainer {
+  width: 380px;
+  height: 900px;
+  position: relative;
+}
+
+.topNav {
+  padding: 30px 20px 60px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 208, 0);
+}
+
+.topNav span {
+  position: absolute;
+  font-size: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-bar {
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 30px;
+  left: 50%;
+  top: 85px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px 0px rgba(22, 22, 22, 0.4);
+}
+
+.search-bar span {
+  padding-left: 30px;
+  opacity: 0.3;
+}
+
+.search-bar i {
+  padding-right: 10px;
+  opacity: 0.3;
+}
+
+.bookOfTheDay {
+  padding: 0px 20px;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.bookOfTheDay__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bookOfTheDay__info img {
+  width: 110px;
+  height: 165px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.bookOfTheDay__info__texts {
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.book__title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.book__author {
+  opacity: 0.3;
+  margin-bottom: 5px;
+}
+
+.book__rate i {
+  color: rgb(255, 208, 0);
+}
+
+.book__rate i:last-child {
+  color: rgba(25, 25, 25, 0.2);
+}
+
+.book__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.book__category {
+  background-color: rgba(55, 55, 55, 0.1);
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.book__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.book_bookMark {
+  background-color: rgb(255, 208, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book_bookNow {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+
+.topAdventures h1 {
+  padding-left: 20px;
+}
+
+.books {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bookCover__small {
+  margin: 0 14px;
+}
+
+.bookCover__small img {
+  width: 80px;
+  height: 105px;
+  border-radius: 5px;
+}
+
+.small i {
+  margin-top: 10px;
+  margin-right: 6px;
+  width: 5px;
+  height: 5px;
+}
+
+.popularAuthors{
+  margin: 20px;
+}
+
+.popularAuthors h1{
+  margin-top: 10px;
+}
+
+.author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.author img{
+  flex-shrink: 0;
+  width: 105px;
+  height: 125px;
+  border-radius: 5px;
+  object-fit:cover;
+  object-position: center;
+}
+
+.authorTexts {
+  margin-left: 25px;
+}
+.authorTexts span{
+  font-size: 22px;
+}
+.authorTexts p{
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+/*<div class="popularAuthors">
+      <h1>Popular authors</h1>
+      <div class="author">
+        <img src="img/nofixedabode.jpg">
+        <span>George Raymond Richard Martin</span>
+        <p>Modern American science fiction writer, screenwriter, producer and editor, winner of many literary awards</p>
+      </div>
+    </div>
+    *.
