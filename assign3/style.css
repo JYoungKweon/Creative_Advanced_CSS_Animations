@@ -1,0 +1,287 @@
+@import url("reset.css");
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.screen {
+  width: 370px;
+  height: 800px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.topNav {
+  width: 100%;
+  margin-top: 45px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.topNav i {
+  margin: 0 25px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px 0px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 8px 0px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 8px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+.profile img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.shuffleAndLike {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shuffle {
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 15px 40px;
+  border-radius: 40px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+
+.like {
+  font-size: 15px;
+  color: black;
+  padding: 15px 15px;
+  border-radius: 40px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+
+.like span {
+  margin: 0px 8px;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sing {
+  width: 320px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+/*
+.sing:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+*/
+
+.sing:nth-child(3) {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.singImg {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.singImg img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.singMore {
+  position: absolute;
+  left: 42%;
+  opacity: 0.4;
+}
+
+.playBar {
+  position: relative;
+  bottom: 6%;
+  width: 95%;
+  padding: 11px 0px;
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.playbarText {
+  position: relative;
+  width: 50%;
+  color: white;
+  padding-left: 30px;
+}
+
+.playbarText h2 {
+  font-size: 15px;
+}
+
+.playbarControl {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playbarControl i {
+  color: white;
+  margin: 0px 6px;
+}
+
+.playbarControl i:nth-child(2) {
+  transform: scaleX(60%);
+  font-size: 26px;
+}
+
+.albumCover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumCover img {
+  width: 265px;
+  height: 265px;
+  box-shadow: 0 15px 70px 0 rgba(92, 129, 199, 1);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.albumCover h1 {
+  margin-top: 70px;
+}
+
+.progress {
+  margin-top: 40px;
+  position: relative;
+  width: 80%;
+}
+
+.progressTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.graybar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin-top: 15px;
+  background-color: black;
+  border-radius: 4px;
+  opacity: 0.2;
+}
+
+.progressPlay {
+  position: relative;
+  width: 100%;
+  height: 6px;
+}
+.blackbar {
+  position: relative;
+  width: 60%;
+  height: 4px;
+  bottom: 4px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.blackcircle {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  bottom: 10px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.playControl {
+  position: relative;
+  margin-top: 10px;
+  width: 90%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.playControl i:nth-child(1) {
+  opacity: 0.3;
+}
+
+.playControl i:nth-child(5) {
+  opacity: 0.3;
+}
+
+.playControl i:nth-child(3) {
+  font-size: 70px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
